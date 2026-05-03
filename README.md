@@ -1,5 +1,164 @@
-📊 FnP Sales Analysis: End-to-End BI Solution📌 Project OverviewThis project transforms raw e-commerce data from Ferns N Petals (FnP) into an interactive business intelligence dashboard. The analysis addresses critical operational challenges such as managing seasonal inventory surges (e.g., Raksha Bandhan) and resolving delivery bottlenecks to improve customer satisfaction.  🏗️ Data Architecture & ETL PipelineAs a data-focused project, I implemented a repeatable ETL (Extract, Transform, Load) workflow to ensure data integrity:  Extraction: Consolidated multi-dimensional data from three sources: customers.csv (100 records), orders.csv (1,000 transactions), and products.csv (70 unique products).  Transformation (Power Query):Data Cleaning: Handled missing values and standardized formats (Phone numbers, Dates).  Feature Engineering: Created derived metrics like "Delivery Delay" (Delivery Date – Order Date) and time-based variables (Order Month, Order Hour) for trend mapping.  Merging: Consolidated disparate files to calculate financial performance by creating a "Revenue" column ($Quantity \times Price$).  Loading (Power Pivot): Modeled the data using a Star Schema, establishing relationships between dimension tables (Customers/Products) and the central Fact table (Orders).  📈 Key Business InsightsThe dashboard provides a visual narrative for stakeholders with the following high-level KPIs:  MetricValueTotal Revenue₹35.2L ($3,520,984)  Average Order Value (AOV)₹3,520.98  Average Delivery Time5.53 Days  Total Orders1,000  🔍 Strategic DiscoveriesSeasonality: Revenue peaks significantly in August due to the Raksha Bandhan festival.  Operational Efficiency: A neutral correlation (~0.05) between order volume and delivery speed suggests that logistics are currently scaling well with demand.  Recommendation: Proactively optimize inventory for top-tier products like "Soft Toys" and "Magnam Sets" at least 30 days before peak festival months.  🛠️ Tech StackMicrosoft Excel: Core analysis engine.Power Query: Data cleaning and ETL.Power Pivot: Data modeling and Star Schema implementation.DAX: Calculated measures and metrics.PivotTables & Slicers: Interactive dashboarding.📂 Repository StructurePlaintext├── Data/                   # Raw CSV files
-├── Dashboard/              # Final Excel (.xlsx) file
-├── Documentation/          # PDF report and Slide outline
+# Ferns N Petals Sales Analysis Dashboard
+
+## Project Overview
+This project analyzes sales and operational performance for **Ferns N Petals (FnP)** using Excel.
+
+The workflow covered the full analytics lifecycle:
+
+- Data Cleaning
+- Data Transformation using Power Query
+- Star Schema Data Modeling using Power Pivot
+- KPI Analysis with Pivot Tables
+- Interactive Dashboard Development
+
+The final output is an interactive **3-page Excel dashboard** built for business decision-making.
+
+---
+
+## Dataset
+The project is built using 3 datasets:
+
+| File | Description |
+|---|---|
+| customers.csv | Customer information |
+| orders.csv | Sales transactions |
+| products.csv | Product details |
+
+### Dataset Summary
+- **100 Customers**
+- **1,000 Orders**
+- **70 Products**
+
+---
+
+## Data Model
+
+A **Star Schema** was implemented for efficient analysis.
+
+### Fact Table
+- Orders
+
+### Dimension Tables
+- Customers
+- Products
+
+Power Pivot relationships were used to connect dimension tables with the central fact table.
+
+## Data Model Preview
+![Data Model](images/data-model.png)
+
+---
+
+## Dashboard Structure
+
+The dashboard consists of 3 interactive pages:
+
+### 1. Main Dashboard
+Provides a high-level executive overview.
+
+Includes:
+- Total Revenue
+- Average Order Value
+- Total Orders
+- Delivery KPIs
+- Revenue Trend Analysis
+
+#### Preview
+![Main Dashboard](images/main-dashboard.png)
+
+---
+
+### 2. Sales Dashboard
+Focused on revenue and customer behavior analysis.
+
+Includes:
+- Monthly Revenue Trends
+- Occasion-wise Sales
+- Product Performance
+- City-wise Distribution
+- Customer Insights
+
+#### Preview
+![Sales Dashboard](images/sales-dashboard.png)
+
+---
+
+### 3. Operations Dashboard
+Focused on logistics and operational efficiency.
+
+Includes:
+- Delivery Delay Analysis
+- Average Delivery Time
+- Order Processing Trends
+- Operational KPIs
+
+#### Preview
+![Operations Dashboard](images/operations-dashboard.png)
+
+---
+
+## Key KPIs
+
+| KPI | Value |
+|---|---|
+| Total Revenue | ₹35.2L |
+| Average Order Value | ₹3,520 |
+| Average Delivery Time | 5.53 Days |
+
+---
+
+## Key Insights
+- Revenue peaks significantly in **August** during **Raksha Bandhan**
+- Festival seasons strongly impact customer purchasing behavior
+- **Soft Toys** and **Magnam Sets** are top-performing products
+- Order quantity has minimal effect on delivery speed (**Correlation ≈ 0.05**)
+
+---
+
+## Tools Used
+- Microsoft Excel
+- Power Query
+- Power Pivot
+- Pivot Tables
+- Dashboard Design
+
+---
+
+## Project Folder Structure
+
+```bash
+FnP-Sales-Analysis/
+│
+├── data/
+│   ├── customers.csv
+│   ├── orders.csv
+│   └── products.csv
+│
+├── dashboard/
+│   └── FnP_Sales_Analysis.xlsx
+│
+├── images/
+│   ├── data-model.png
+│   ├── main-dashboard.png
+│   ├── sales-dashboard.png
+│   └── operations-dashboard.png
+│
+├── presentation/
+│   └── FnP_Sales_Analysis_Presentation.pptx
+│
 └── README.md
-👤 AuthorMahmoud GamalAspiring Data Engineer[LinkedIn Profile]
+```
+
+---
+
+## Business Recommendations
+- Optimize inventory before peak festival seasons
+- Prioritize top-performing products before high-demand months
+- Closely monitor delivery efficiency during seasonal spikes
+
+---
+
+## Author
+**Mahmoud Saad**
+
+Connect with me on LinkedIn and feel free to explore the project.
