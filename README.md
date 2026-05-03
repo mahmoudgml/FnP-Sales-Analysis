@@ -1,43 +1,5 @@
-# 🎁 Ferns N Petals (FnP) Sales Analysis
-
-## 📌 Project Overview
-[cite_start]This project analyzes a dataset from FNP (Ferns and Petals), an e-commerce platform specializing in sending gifts for various occasions[cite: 2]. [cite_start]The goal is to uncover key insights related to sales trends, customer behavior, and product performance [cite: 4] by taking raw data through a complete ETL pipeline and building an interactive Excel dashboard.
-
-## 🗂️ Dataset Details
-[cite_start]The dataset contains details about the products, orders, customers, and relevant dates[cite: 3].
-* **customers.csv:** Contains 100 customer records.
-* **orders.csv:** Contains 1,000 transaction records.
-* **products.csv:** Contains 70 unique products.
-
-## 🎯 Business Objectives
-[cite_start]The project answers several key business questions to help the company improve its sales strategy and optimize customer satisfaction[cite: 5]:
-* [cite_start]**Total Revenue:** Identify the overall revenue[cite: 6].
-* [cite_start]**Average Order and Delivery Time:** Evaluate the time taken for orders to be delivered[cite: 7].
-* [cite_start]**Monthly Sales Performance:** Examine how sales fluctuate across the months of 2023[cite: 8].
-* [cite_start]**Order Quantity vs. Delivery Time:** Analyze if higher order quantities impact delivery times[cite: 14].
-
-## ⚙️ Tools & ETL Workflow
-* **Extract & Transform (Power Query):** Cleaned missing values, removed irrelevant text, standardized phone numbers/dates, and calculated derived metrics like "Delivery Delay" and "Revenue".
-* **Data Modeling (Power Pivot):** Designed a robust Star Schema connecting dimension tables (Customers, Products) to the central fact table (Orders).
-* **Visualization (Excel PivotTables):** Built dynamic dashboards using Slicers for temporal and categorical filtering (e.g., filtering by Occasion).
-
-## 📊 Key Insights
-* **Revenue & AOV:** Achieved a Total Revenue of **$3.52M** with an Average Order Value (AOV) of **$3,520**.
-* **Logistics Efficiency:** The average delivery time stands at **5.53 days**. Correlation analysis (~0.003) indicates that higher order volumes do not negatively impact delivery speed.
-* **Seasonality:** Revenue peaks significantly in August, heavily driven by the Raksha Bandhan festival.
-
-## 🖼️ Dashboard Previews
-
-### Main Dashboard
-![Main Dashboard](Dashboard/Screenshots/Main_Dashboard.jpg)
-
-### Sales Dashboard
-![Sales Dashboard](Dashboard/Screenshots/Sales_Dashboard.jpg)
-
-### Operations Dashboard
-![Operations Dashboard](Dashboard/Screenshots/Operations_Dashboard.jpg)
-
-## 🚀 How to Run This Project
-1. Clone this repository to your local machine:
-   ```bash
-   git clone [https://github.com/YourUsername/FnP-Sales-Analysis.git](https://github.com/YourUsername/FnP-Sales-Analysis.git)
+📊 FnP Sales Analysis: End-to-End BI Solution📌 Project OverviewThis project transforms raw e-commerce data from Ferns N Petals (FnP) into an interactive business intelligence dashboard. The analysis addresses critical operational challenges such as managing seasonal inventory surges (e.g., Raksha Bandhan) and resolving delivery bottlenecks to improve customer satisfaction.  🏗️ Data Architecture & ETL PipelineAs a data-focused project, I implemented a repeatable ETL (Extract, Transform, Load) workflow to ensure data integrity:  Extraction: Consolidated multi-dimensional data from three sources: customers.csv (100 records), orders.csv (1,000 transactions), and products.csv (70 unique products).  Transformation (Power Query):Data Cleaning: Handled missing values and standardized formats (Phone numbers, Dates).  Feature Engineering: Created derived metrics like "Delivery Delay" (Delivery Date – Order Date) and time-based variables (Order Month, Order Hour) for trend mapping.  Merging: Consolidated disparate files to calculate financial performance by creating a "Revenue" column ($Quantity \times Price$).  Loading (Power Pivot): Modeled the data using a Star Schema, establishing relationships between dimension tables (Customers/Products) and the central Fact table (Orders).  📈 Key Business InsightsThe dashboard provides a visual narrative for stakeholders with the following high-level KPIs:  MetricValueTotal Revenue₹35.2L ($3,520,984)  Average Order Value (AOV)₹3,520.98  Average Delivery Time5.53 Days  Total Orders1,000  🔍 Strategic DiscoveriesSeasonality: Revenue peaks significantly in August due to the Raksha Bandhan festival.  Operational Efficiency: A neutral correlation (~0.05) between order volume and delivery speed suggests that logistics are currently scaling well with demand.  Recommendation: Proactively optimize inventory for top-tier products like "Soft Toys" and "Magnam Sets" at least 30 days before peak festival months.  🛠️ Tech StackMicrosoft Excel: Core analysis engine.Power Query: Data cleaning and ETL.Power Pivot: Data modeling and Star Schema implementation.DAX: Calculated measures and metrics.PivotTables & Slicers: Interactive dashboarding.📂 Repository StructurePlaintext├── Data/                   # Raw CSV files
+├── Dashboard/              # Final Excel (.xlsx) file
+├── Documentation/          # PDF report and Slide outline
+└── README.md
+👤 AuthorMahmoud GamalAspiring Data Engineer[LinkedIn Profile]
