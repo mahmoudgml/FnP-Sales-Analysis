@@ -51,17 +51,24 @@ Power Pivot relationships were used to connect dimension tables with the central
 
 ## Dashboard Structure
 
-The dashboard consists of 3 interactive pages:
+The dashboard consists of 3 interactive pages with slicers and filters for dynamic analysis.
 
 ### 1. Main Dashboard
-Provides a high-level executive overview.
+Provides a high-level overview of business performance and key KPIs.
 
 Includes:
 - Total Revenue
-- Average Order Value
-- Total Orders
-- Delivery KPIs
-- Revenue Trend Analysis
+- Average Order Value (AOV)
+- Average Delivery Time
+- Total Customers
+- Monthly Revenue Trend
+- Top Market Analysis
+- Top 5 Products
+- Gender Distribution Analysis
+
+Interactive Filters:
+- Occasion Slicer
+- Order Date (Month) Slicer
 
 #### Preview
 ![Main Dashboard](images/main-dashboard.png)
@@ -69,14 +76,17 @@ Includes:
 ---
 
 ### 2. Sales Dashboard
-Focused on revenue and customer behavior analysis.
+Focused on analyzing revenue performance and customer purchasing behavior.
 
 Includes:
-- Monthly Revenue Trends
-- Occasion-wise Sales
-- Product Performance
-- City-wise Distribution
-- Customer Insights
+- Occasion-wise sales analysis
+- Product performance analysis
+- Customer insights
+- Market performance breakdown
+
+Interactive Features:
+- Occasion-based filtering
+- Time-based sales filtering
 
 #### Preview
 ![Sales Dashboard](images/sales-dashboard.png)
@@ -84,17 +94,20 @@ Includes:
 ---
 
 ### 3. Operations Dashboard
-Focused on logistics and operational efficiency.
+Focused on monitoring operational efficiency and delivery performance.
 
 Includes:
-- Delivery Delay Analysis
-- Average Delivery Time
-- Order Processing Trends
-- Operational KPIs
+- Orders volume vs Delivery time 
+- Average delivery metrics
+- Delivery by city
+- Revenue by hours
+
+Interactive Features:
+- Operational filtering by occasion and date
+- Delivery performance monitoring
 
 #### Preview
 ![Operations Dashboard](images/operations-dashboard.png)
-
 ---
 
 ## Key KPIs
@@ -158,7 +171,7 @@ FnP-Sales-Analysis/
 
 ---
 
-## Author
-**Mahmoud Saad**
+## 📬 Contact
 
-Connect with me on LinkedIn and feel free to explore the project.
+📧 Email: [mahmoud23456123@gmail.com](mailto:mahmoud23456123@gmail.com)
+🔗 LinkedIn: [https://www.linkedin.com/in/mahmoudgamalsaad](https://www.linkedin.com/in/mahmoudgamalsaad)
