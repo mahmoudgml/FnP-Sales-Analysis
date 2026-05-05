@@ -147,17 +147,13 @@ FnP-Sales-Analysis/
 │   ├── orders.csv
 │   └── products.csv
 │
-├── dashboard/
-│   └── FnP_Sales_Analysis.xlsx
+├── FnP_Sales_Analysis.xlsx
 │
 ├── images/
 │   ├── data-model.png
 │   ├── main-dashboard.png
 │   ├── sales-dashboard.png
 │   └── operations-dashboard.png
-│
-├── presentation/
-│   └── FnP_Sales_Analysis_Presentation.pptx
 │
 └── README.md
 ```
